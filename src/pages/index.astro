@@ -1,23 +1,7 @@
 ---
-
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "首页New";
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro is a static site generator</h1>
-		<p>
-			Astro is a static site generator that allows you to build fast,
-			high-performance websites using modern web technologies.
-		</p>
-		<p>
-			With Astro, you can build websites that are fast, secure, and SEO-friendly.
-		</p>
-	</body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+  <h2>我超棒的博客副标题</h2>
+</BaseLayout>
